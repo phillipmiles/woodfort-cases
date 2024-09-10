@@ -1,0 +1,12 @@
+.container {
+  list-style: none;
+}
+
+.link {
+  display: block;
+  padding: 16px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
