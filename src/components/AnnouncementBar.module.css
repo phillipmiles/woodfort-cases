@@ -5,4 +5,16 @@
   width: 100%;
   color: white;
   background-color: var(--color-primary);
+  font-size: var(--font-small);
+  height: 40px;
+}
+
+.link {
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+}
+
+.link:hover {
+  text-decoration: underline;
 }

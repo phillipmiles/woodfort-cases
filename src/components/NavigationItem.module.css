@@ -5,8 +5,19 @@
 .link {
   display: block;
   padding: 16px;
+  color: var(--color-foreground-soft);
+  text-underline-offset: 0.25rem;
 }
 
 .link:hover {
   text-decoration: underline;
+}
+
+.link.active {
+  color: var(--color-foreground);
+  text-decoration: underline;
+}
+
+.link.active:hover {
+  text-decoration-thickness: 0.12rem;
 }

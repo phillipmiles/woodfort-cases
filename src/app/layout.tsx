@@ -30,9 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <AnnouncementBar>
-          <Link href="/">Now shipping worldwide</Link>
-        </AnnouncementBar>
+        <AnnouncementBar href="/">Now shipping worldwide</AnnouncementBar>
         <Header />
         {children}
       </body>
