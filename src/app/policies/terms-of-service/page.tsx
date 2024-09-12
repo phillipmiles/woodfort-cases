@@ -1,12 +1,9 @@
-import Image from 'next/image';
-import s from './page.module.css';
-
 import ContentWidth from '@/components/ContentWidth';
 
 export default function Home() {
   return (
     <div>
-      <ContentWidth>
+      <ContentWidth narrow>
         <h1>Terms of service</h1>
         <h2>OVERVIEW</h2>
         <p>

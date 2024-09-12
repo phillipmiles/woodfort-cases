@@ -1,12 +1,9 @@
-import Image from 'next/image';
-import s from './page.module.css';
-
 import ContentWidth from '@/components/ContentWidth';
 
 export default function Home() {
   return (
     <div>
-      <ContentWidth>
+      <ContentWidth narrow>
         <h1>Refund policy</h1>
         <p>
           Woodfort Cases is unable to offer a return or exchange for customers

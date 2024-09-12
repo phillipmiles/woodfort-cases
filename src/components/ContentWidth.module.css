@@ -3,3 +3,7 @@
   max-width: var(--content-width);
   margin: auto;
 }
+
+.container.narrow {
+  max-width: var(--content-width-narrow);
+}
