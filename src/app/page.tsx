@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import s from './page.module.css';
-import Footer from '@/constructs/Footer';
 import ContentWidth from '@/components/ContentWidth';
 
 export default function Home() {
