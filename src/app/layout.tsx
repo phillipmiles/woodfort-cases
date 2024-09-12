@@ -4,6 +4,7 @@ import './globals.css';
 import Header from '@/constructs/Header';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Link from 'next/link';
+import Footer from '@/constructs/Footer';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -33,6 +34,7 @@ export default function RootLayout({
         <AnnouncementBar href="/">Now shipping worldwide</AnnouncementBar>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

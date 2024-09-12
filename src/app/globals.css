@@ -5,6 +5,8 @@
   --color-foreground-soft: #606060;
 
   --font-small: 14px;
+
+  --content-width: 1100px;
 }
 
 html,
