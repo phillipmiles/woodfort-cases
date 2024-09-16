@@ -1,0 +1,5 @@
+.container {
+  padding: 64px;
+  width: 40%;
+  flex-shrink: 0;
+}

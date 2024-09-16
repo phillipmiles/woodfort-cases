@@ -5,12 +5,13 @@
 .link {
   display: block;
   padding: 16px;
-  opacity: 0.7;
+  opacity: 0.75;
   text-underline-offset: 0.25rem;
 }
 
 .link:hover {
   text-decoration: underline;
+  opacity: 1;
 }
 
 .link.active {

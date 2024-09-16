@@ -1,0 +1,11 @@
+.container {
+  display: inline-block;
+  background-color: var(--color-foreground);
+  color: white;
+  padding: 16px 32px;
+}
+
+.invert {
+  color: var(--color-foreground);
+  background-color: white;
+}
