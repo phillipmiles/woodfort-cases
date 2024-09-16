@@ -6,6 +6,7 @@
   display: block;
   padding: 16px;
   opacity: 0.75;
+  text-decoration: none;
   text-underline-offset: 0.25rem;
 }
 

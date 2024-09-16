@@ -3,9 +3,22 @@
   background-color: var(--color-foreground);
   color: white;
   padding: 16px 32px;
+  box-shadow: 0px 0px 0px 0px var(--color-foreground);
+  transition: box-shadow 100ms;
+  text-decoration: none;
+}
+
+.container:hover {
+  transition: box-shadow 150ms;
+  box-shadow: 0px 0px 0px 1px var(--color-foreground);
 }
 
 .invert {
   color: var(--color-foreground);
   background-color: white;
+  box-shadow: 0px 0px 0px 0px white;
+}
+
+.invert:hover {
+  box-shadow: 0px 0px 0px 1px white;
 }

@@ -37,6 +37,7 @@ a {
   font-weight: 500;
 }
 
+h1,
 h2 {
   font-size: 40px;
   font-weight: 500;
@@ -71,4 +72,13 @@ p {
 
 p:last-of-type {
   margin-bottom: 0;
+}
+
+a {
+  text-underline-offset: 0.2rem;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration-thickness: 0.12rem;
 }
