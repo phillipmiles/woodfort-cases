@@ -33,7 +33,7 @@ const Header = () => {
               src="/brand/logo.webp"
               alt="Woodfort Cases"
               width={230}
-              height={118.5}
+              height={118}
             />
           </Link>
         </div>

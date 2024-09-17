@@ -3,11 +3,20 @@
   height: 560px;
 }
 
+.bannerImage {
+  object-fit: cover;
+}
+
 .productsList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
 }
 
 .sectionCTA {
   margin-top: 32px;
+}
+
+.heroCardMargin {
+  margin-bottom: 56px;
 }
