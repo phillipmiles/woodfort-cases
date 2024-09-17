@@ -6,3 +6,10 @@
 .image {
   object-fit: cover;
 }
+
+@media (max-width: 780px) {
+  .container {
+    height: 400px;
+    order: -1;
+  }
+}

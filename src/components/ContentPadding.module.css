@@ -3,9 +3,16 @@
   padding-right: 48px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

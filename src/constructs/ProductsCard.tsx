@@ -31,7 +31,7 @@ const ProductsCard = ({
             {title}
           </Link>
         </h3>
-        <p>{description}</p>
+        <p className={s.description}>{description}</p>
       </div>
     </div>
   );

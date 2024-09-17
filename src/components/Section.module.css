@@ -30,3 +30,26 @@
   color: white;
   opacity: 0.7;
 }
+
+@media (max-width: 1024px) {
+  .comfort {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .tight {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (max-width: 780px) {
+  .comfort {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .tight {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

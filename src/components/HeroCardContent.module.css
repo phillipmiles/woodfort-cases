@@ -3,3 +3,16 @@
   width: 40%;
   flex-shrink: 0;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 48px;
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    width: 100%;
+    padding: 32px;
+  }
+}
