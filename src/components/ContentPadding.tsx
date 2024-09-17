@@ -1,10 +1,11 @@
 import s from './ContentPadding.module.css';
 
 interface Props {
+  className?: string;
   children: React.ReactNode;
 }
 
-const ContentPadding = ({ children }: Props) => {
-  return <div className={s.container}>{children}</div>;
+const ContentPadding = ({ className, children }: Props) => {
+  return <div className={`${className} ${s.container}`}>{children}</div>;
 };
 export default ContentPadding;

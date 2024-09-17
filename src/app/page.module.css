@@ -3,42 +3,9 @@
   height: 560px;
 }
 
-.section {
-  padding-left: 48px;
-  padding-right: 48px;
-}
-
-.section p {
-  color: var(--color-foreground-soft);
-  opacity: 1;
-}
-
-.sectionCenter {
-  text-align: center;
-}
-
-.sectionTight {
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
-
-.sectionComfort {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
-
-.sectionSoft {
-  background-color: var(--color-background-soft);
-}
-
-.sectionPrimary {
-  background-color: var(--color-primary);
-  color: white;
-}
-
-.sectionPrimary p {
-  color: white;
-  opacity: 0.7;
+.productsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .sectionCTA {
