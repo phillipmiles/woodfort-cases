@@ -38,8 +38,11 @@ const Header = () => {
           <NaviationItem href="/" active={pathname === '/'}>
             Home
           </NaviationItem>
-          <NaviationItem href="/shop" active={pathname === '/shop'}>
-            Shop
+          <NaviationItem
+            href="/cases/genesis"
+            active={pathname === '/cases/genesis'}
+          >
+            Cases
           </NaviationItem>
           <NaviationItem href="/about" active={pathname === '/about'}>
             About

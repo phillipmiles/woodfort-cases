@@ -29,7 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${assistant.className} ${s.body}`}>
-        <AnnouncementBar href="/">Now shipping worldwide</AnnouncementBar>
+        <AnnouncementBar href="/cases/genesis">
+          Now shipping worldwide
+        </AnnouncementBar>
         <Header />
         <main className={s.content}>{children}</main>
         <Footer />

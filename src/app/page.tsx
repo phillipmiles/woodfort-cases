@@ -40,7 +40,7 @@ export default function Home() {
               wooden panels cover the cold aluminium structure beneath with the
               soothing glow of natural timber.
             </p>
-            <LinkButton href="/" className={s.sectionCTA}>
+            <LinkButton href="/cases/genesis" className={s.sectionCTA}>
               Learn more
             </LinkButton>
           </HeroCardContent>
@@ -80,7 +80,7 @@ export default function Home() {
           Woodfort cases are made to order and may be scheduled for production
           months in advance. Enquire below to secure the next available space.
         </p>
-        <LinkButton href="/" invert className={s.sectionCTA}>
+        <LinkButton href="/contact" invert className={s.sectionCTA}>
           Enquire
         </LinkButton>
       </Section>
@@ -93,7 +93,7 @@ export default function Home() {
               Melbourne, Australia he uses a variety of locally sourced and
               international timbers.
             </p>
-            <LinkButton href="/" className={s.sectionCTA}>
+            <LinkButton href="/about" className={s.sectionCTA}>
               Learn more
             </LinkButton>
           </HeroCardContent>
