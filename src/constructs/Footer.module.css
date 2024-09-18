@@ -28,8 +28,19 @@
   padding: 8px;
 }
 
+.logo {
+  padding: 8px;
+}
+
 .socials {
   justify-content: center;
   justify-content: flex-end;
   margin-right: -12px; /* Correcting indent made from nav item padding */
+}
+
+@media (max-width: 1024px) {
+  .inner {
+    display: flex;
+    flex-direction: column;
+  }
 }

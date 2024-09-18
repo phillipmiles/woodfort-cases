@@ -38,7 +38,7 @@ const Footer = () => {
             Refund Policy
           </NaviationItem>
         </ul>
-        <div>
+        <div className={s.logo}>
           <Link href="/">
             <Image
               src="/brand/logo-icon_white.png"
