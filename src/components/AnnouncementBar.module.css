@@ -17,6 +17,15 @@
   text-underline-offset: 0.2rem;
 }
 
+.icon {
+  margin-left: 8px;
+  transition: transform 150ms;
+}
+
 .link:hover {
   text-decoration: underline;
+}
+
+.link:hover .icon {
+  transform: translateX(2px);
 }
