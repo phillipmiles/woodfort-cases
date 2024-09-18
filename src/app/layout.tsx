@@ -4,6 +4,7 @@ import Header from '@/constructs/Header';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Footer from '@/constructs/Footer';
 import { Assistant } from 'next/font/google';
+import s from './layout.module.css';
 
 // The following import prevents a Font Awesome icon server-side rendering bug,
 // where the icons flash from a very large icon down to a properly sized one:
@@ -27,10 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${assistant.className}`}>
+      <body className={`${assistant.className} ${s.body}`}>
         <AnnouncementBar href="/">Now shipping worldwide</AnnouncementBar>
         <Header />
-        {children}
+        <main className={s.content}>{children}</main>
         <Footer />
       </body>
     </html>
