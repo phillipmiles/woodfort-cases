@@ -13,3 +13,42 @@
 .nav {
   margin-left: -16px; /* Correcting indent made from nav item padding */
 }
+
+.drawerButton {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  display: none;
+  width: 48px;
+  height: 48px;
+  transition: transform 150ms;
+  cursor: pointer;
+  margin-left: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.drawerButton:hover {
+  transform: scale(1.1);
+}
+
+.drawer {
+  display: none;
+  flex-direction: column;
+}
+
+.drawerContent {
+  flex-grow: 1;
+}
+
+@media (max-width: 1024px) {
+  .drawerButton {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+  .drawer {
+    display: flex;
+  }
+}

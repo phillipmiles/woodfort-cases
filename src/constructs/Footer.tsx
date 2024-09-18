@@ -4,14 +4,8 @@ import s from './Footer.module.css';
 import Image from 'next/image';
 import NaviationItem from '@/components/NavigationItem';
 import { usePathname } from 'next/navigation';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faYoutube,
-  faInstagram,
-  faTwitter,
-  faPinterest,
-} from '@fortawesome/free-brands-svg-icons';
 import ContentWidth from '@/components/ContentWidth';
+import Socials from '@/components/Socials';
 
 const Footer = () => {
   const pathname = usePathname();
@@ -54,28 +48,7 @@ const Footer = () => {
             />
           </Link>
         </div>
-        <ul className={`${s.nav} ${s.socials}`}>
-          <li>
-            <Link href="/">
-              <FontAwesomeIcon icon={faInstagram} size="xl" />
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <FontAwesomeIcon icon={faYoutube} size="xl" />
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <FontAwesomeIcon icon={faTwitter} size="xl" />
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <FontAwesomeIcon icon={faPinterest} size="xl" />
-            </Link>
-          </li>
-        </ul>
+        <Socials className={s.socials} />
       </ContentWidth>
     </footer>
   );

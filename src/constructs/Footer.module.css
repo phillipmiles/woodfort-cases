@@ -29,16 +29,7 @@
 }
 
 .socials {
-  display: flex;
   justify-content: center;
   justify-content: flex-end;
   margin-right: -12px; /* Correcting indent made from nav item padding */
-}
-
-.socials a {
-  transition: 150ms;
-  padding: 12px;
-}
-.socials a:hover {
-  transform: scale(1.1);
 }
