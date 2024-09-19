@@ -25,6 +25,7 @@ import imageBlackwoodBareBack from '../../../../public/images/genesis/blackwood/
 import SpecsCell from '@/components/SpecsCell';
 import SpecsCellTitle from '@/components/SpecsCellTitle';
 import SpecsGrid from '@/components/SpecsGrid';
+import OrderNowSection from '@/constructs/OrderNowSection';
 
 const Page = () => {
   return (
@@ -283,20 +284,7 @@ const Page = () => {
           </SpecsCell>
         </SpecsGrid>
       </Section>
-      <Section narrow comfort center primary>
-        <h2 style={{ fontSize: '52px' }}>Order now</h2>
-        <p>
-          Woodfort cases are made to order and may be scheduled for production
-          months in advance. Enquire below to secure the next available space.
-        </p>
-        <LinkButton
-          href="/contact"
-          invert
-          // className={s.sectionCTA}
-        >
-          Enquire
-        </LinkButton>
-      </Section>
+      <OrderNowSection />
       <Section tight>
         <h3>Variants</h3>
         <ProductsGrid>

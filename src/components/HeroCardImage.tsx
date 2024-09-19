@@ -16,7 +16,7 @@ const HeroCardImage = ({ src, alt, priority = false }: Props) => {
         alt={alt}
         fill
         priority={priority}
-        sizes="(max-width: 780px) 100vw, 50vw"
+        sizes="(max-width: 780px) 100vw, 80vw"
       />
     </div>
   );

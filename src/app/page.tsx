@@ -16,6 +16,7 @@ import imageTasOakPower1 from '../../public/images/genesis/tasoak/power1_tasoak.
 import imageBlackwoodPower1 from '../../public/images/genesis/blackwood/power1_blackwood.jpg';
 import imageWalnutPower1 from '../../public/images/genesis/walnut/power1_walnut.jpg';
 import imageWipSandingAltBW from '../../public/images/wip_sanding_alt_blackwhite.jpg';
+import OrderNowSection from '@/constructs/OrderNowSection';
 
 export default function Home() {
   return (
@@ -85,16 +86,7 @@ export default function Home() {
         </ProductsGrid>
       </Section>
 
-      <Section narrow comfort center primary>
-        <h2 style={{ fontSize: '52px' }}>Order now</h2>
-        <p>
-          Woodfort cases are made to order and may be scheduled for production
-          months in advance. Enquire below to secure the next available space.
-        </p>
-        <LinkButton href="/contact" invert className={s.sectionCTA}>
-          Enquire
-        </LinkButton>
-      </Section>
+      <OrderNowSection />
       <Section soft comfort>
         <HeroCard>
           <HeroCardContent>
