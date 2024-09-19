@@ -6,6 +6,16 @@ import HeroCardContent from '@/components/HeroCardContent';
 import LinkButton from '@/components/LinkButton';
 import Section from '@/components/Section';
 import ProductsCard from '@/constructs/ProductsCard';
+import ProductsGrid from '@/components/ProductsGrid';
+
+import imageComposite from '../../public/images/composite.jpg';
+import imageTasOakMain from '../../public/images/genesis/tasoak/main_tasoak.jpg';
+import imageBlackwoodMain from '../../public/images/genesis/blackwood/main_blackwood.jpg';
+import imageWalnutMain from '../../public/images/genesis/walnut/main_walnut.jpg';
+import imageTasOakPower1 from '../../public/images/genesis/tasoak/power1_tasoak.jpg';
+import imageBlackwoodPower1 from '../../public/images/genesis/blackwood/power1_blackwood.jpg';
+import imageWalnutPower1 from '../../public/images/genesis/walnut/power1_walnut.jpg';
+import imageWipSandingAltBW from '../../public/images/wip_sanding_alt_blackwhite.jpg';
 
 export default function Home() {
   return (
@@ -13,9 +23,10 @@ export default function Home() {
       <div className={s.banner}>
         <Image
           className={s.bannerImage}
-          src="/images/composite.jpg"
+          src={imageComposite}
           alt=""
           priority
+          sizes="100vw"
           fill
         />
       </div>
@@ -29,7 +40,7 @@ export default function Home() {
       <Section soft tight>
         <HeroCard className={s.heroCardMargin}>
           <HeroCardImage
-            src="/images/genesis/tasoak/power1_tasoak.jpg"
+            src={imageTasOakPower1}
             alt="The Genesis case by Woodfort Cases. A PC case made with Tasmanian Oak wooden panels giving the case a beautiful, bright, straw coloured appearance. "
           />
           <HeroCardContent>
@@ -46,32 +57,32 @@ export default function Home() {
           </HeroCardContent>
         </HeroCard>
         <h3>Available in 3 different timbers</h3>
-        <div className={s.productsList}>
+        <ProductsGrid>
           <ProductsCard
             title="Genesis - Tasmanian Oak"
-            description="$2,800"
+            // description="$2,800"
             href=""
             alt=""
-            src="/images/genesis/tasoak/main_tasoak.jpg"
-            srcHover="/images/genesis/tasoak/power1_tasoak.jpg"
+            src={imageTasOakMain}
+            srcHover={imageTasOakPower1}
           />
           <ProductsCard
             title="Genesis - Walnut"
-            description="$2,800"
+            // description="$2,800"
             href=""
             alt=""
-            src="/images/genesis/walnut/main_walnut.jpg"
-            srcHover="/images/genesis/walnut/power1_walnut.jpg"
+            src={imageWalnutMain}
+            srcHover={imageWalnutPower1}
           />
           <ProductsCard
             title="Genesis - Blackwood"
-            description="$2,800"
+            // description="$2,800"
             href=""
             alt=""
-            src="/images/genesis/blackwood/main_blackwood.jpg"
-            srcHover="/images/genesis/blackwood/power1_blackwood.jpg"
+            src={imageBlackwoodMain}
+            srcHover={imageBlackwoodPower1}
           />
-        </div>
+        </ProductsGrid>
       </Section>
 
       <Section narrow comfort center primary>
@@ -98,7 +109,7 @@ export default function Home() {
             </LinkButton>
           </HeroCardContent>
           <HeroCardImage
-            src="/images/wip_sanding_alt_blackwhite.jpg"
+            src={imageWipSandingAltBW}
             alt="A man sands the wooden slats from the front panel of the Genesis computer case."
           />
         </HeroCard>

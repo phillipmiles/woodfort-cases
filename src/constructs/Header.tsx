@@ -10,15 +10,13 @@ import ContentWidth from '@/components/ContentWidth';
 import Drawer from '@/components/Drawer';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faBars,
-  faHamburger,
-  faXmark,
-} from '@fortawesome/free-solid-svg-icons';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import DrawerNavigation from '@/components/DrawerNavigation';
 import DrawerNavigationItem from '@/components/DrawerNavigationItem';
 import Socials from '@/components/Socials';
 import DrawerFooter from '@/components/DrawerFooter';
+
+import imageLogo from '../../public/brand/logo.webp';
 
 const Header = () => {
   const pathname = usePathname();
@@ -54,7 +52,8 @@ const Header = () => {
         <div>
           <Link href="/">
             <Image
-              src="/brand/logo.webp"
+              src={imageLogo}
+              priority
               alt="Woodfort Cases"
               width={230}
               height={118}

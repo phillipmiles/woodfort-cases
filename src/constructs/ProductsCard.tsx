@@ -1,12 +1,12 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import s from './ProductsCard.module.css';
 import Link from 'next/link';
 
 interface Props {
   title: string;
-  description: string;
-  src: string;
-  srcHover: string;
+  description?: string;
+  src: StaticImageData;
+  srcHover: StaticImageData;
   alt: string;
   href: string;
 }
@@ -22,8 +22,20 @@ const ProductsCard = ({
   return (
     <div className={s.container}>
       <div className={s.imageContainer}>
-        <Image src={src} alt={alt} className={s.image} fill />
-        <Image src={srcHover} alt={alt} className={s.imageHover} fill />
+        <Image
+          src={src}
+          alt={alt}
+          className={s.image}
+          fill
+          sizes="(max-width: 1024px) 50vw, 33vw"
+        />
+        <Image
+          src={srcHover}
+          alt={alt}
+          className={s.imageHover}
+          fill
+          sizes="(max-width: 1024px) 50vw, 33vw"
+        />
       </div>
       <div>
         <h3 className={s.title}>

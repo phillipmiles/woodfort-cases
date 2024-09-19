@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import s from './HeroCardImage.module.css';
 
 interface Props {
-  src: string;
+  src: StaticImageData;
   alt: string;
   priority?: boolean;
 }
@@ -10,7 +10,14 @@ interface Props {
 const HeroCardImage = ({ src, alt, priority = false }: Props) => {
   return (
     <div className={s.container}>
-      <Image className={s.image} src={src} alt={alt} fill priority={priority} />
+      <Image
+        className={s.image}
+        src={src}
+        alt={alt}
+        fill
+        priority={priority}
+        sizes="(max-width: 780px) 100vw, 50vw"
+      />
     </div>
   );
 };

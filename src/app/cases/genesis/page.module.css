@@ -1,0 +1,38 @@
+.productContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.productImages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 8px;
+  flex-grow: 1;
+}
+
+.productImages img:first-child {
+  grid-column: span 2;
+}
+
+.productDetails {
+  max-width: 30%;
+  width: 100%;
+}
+
+.overTitle {
+  text-transform: uppercase;
+  font-size: var(--font-small);
+}
+
+@media (max-width: 1024px) {
+  .productContainer {
+    display: block;
+  }
+
+  .productDetails {
+    max-width: none;
+  }
+}

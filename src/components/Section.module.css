@@ -1,4 +1,6 @@
-.container p {
+.container p,
+.container blockquote,
+.container span {
   color: var(--color-foreground-soft);
   opacity: 1;
 }
