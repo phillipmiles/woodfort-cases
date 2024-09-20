@@ -52,7 +52,10 @@ export default function Home() {
               wooden panels cover the cold aluminium structure beneath with the
               soothing glow of natural timber.
             </p>
-            <LinkButton href="/cases/genesis" className={s.sectionCTA}>
+            <LinkButton
+              href="/cases/genesis/tasmanian-oak"
+              className={s.sectionCTA}
+            >
               Learn more
             </LinkButton>
           </HeroCardContent>
@@ -62,7 +65,7 @@ export default function Home() {
           <ProductsCard
             title="Genesis - Tasmanian Oak"
             // description="$2,800"
-            href=""
+            href="/cases/genesis/tasmanian-oak"
             alt=""
             src={imageTasOakMain}
             srcHover={imageTasOakPower1}
@@ -70,7 +73,7 @@ export default function Home() {
           <ProductsCard
             title="Genesis - Walnut"
             // description="$2,800"
-            href=""
+            href="/cases/genesis/walnut"
             alt=""
             src={imageWalnutMain}
             srcHover={imageWalnutPower1}
@@ -78,7 +81,7 @@ export default function Home() {
           <ProductsCard
             title="Genesis - Blackwood"
             // description="$2,800"
-            href=""
+            href="/cases/genesis/blackwood"
             alt=""
             src={imageBlackwoodMain}
             srcHover={imageBlackwoodPower1}

@@ -36,10 +36,7 @@ const Header = () => {
           <NaviationItem href="/" active={pathname === '/'}>
             Home
           </NaviationItem>
-          <NaviationItem
-            href="/cases/genesis"
-            active={pathname === '/cases/genesis'}
-          >
+          <NaviationItem href="/cases" active={pathname === '/cases'}>
             Cases
           </NaviationItem>
           <NaviationItem href="/about" active={pathname === '/about'}>

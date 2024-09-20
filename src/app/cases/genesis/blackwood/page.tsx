@@ -6,129 +6,51 @@ import ProductsCard from '@/constructs/ProductsCard';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import imageTasOakMain from '../../../../public/images/genesis/tasoak/main_tasoak.jpg';
-import imageBlackwoodMain from '../../../../public/images/genesis/blackwood/main_blackwood.jpg';
-import imageWalnutMain from '../../../../public/images/genesis/walnut/main_walnut.jpg';
-import imageTasOakPower1 from '../../../../public/images/genesis/tasoak/power1_tasoak.jpg';
-import imageBlackwoodPower1 from '../../../../public/images/genesis/blackwood/power1_blackwood.jpg';
-import imageWalnutPower1 from '../../../../public/images/genesis/walnut/power1_walnut.jpg';
-import imageTasOakPower2 from '../../../../public/images/genesis/tasoak/power2_tasoak.jpg';
-import imageBlackwoodPower2 from '../../../../public/images/genesis/blackwood/power2_blackwood.jpg';
-import imageWalnutPower2 from '../../../../public/images/genesis/walnut/power2_walnut.jpg';
+import imageTasOakMain from '../../../../../public/images/genesis/tasoak/main_tasoak.jpg';
+import imageBlackwoodMain from '../../../../../public/images/genesis/blackwood/main_blackwood.jpg';
+import imageWalnutMain from '../../../../../public/images/genesis/walnut/main_walnut.jpg';
+import imageTasOakPower1 from '../../../../../public/images/genesis/tasoak/power1_tasoak.jpg';
+import imageBlackwoodPower1 from '../../../../../public/images/genesis/blackwood/power1_blackwood.jpg';
+import imageWalnutPower1 from '../../../../../public/images/genesis/walnut/power1_walnut.jpg';
+import imageTasOakPower2 from '../../../../../public/images/genesis/tasoak/power2_tasoak.jpg';
+import imageBlackwoodPower2 from '../../../../../public/images/genesis/blackwood/power2_blackwood.jpg';
+import imageWalnutPower2 from '../../../../../public/images/genesis/walnut/power2_walnut.jpg';
 
-import imageBlackwoodRear from '../../../../public/images/genesis/blackwood/rear_blackwood.jpg';
-import imageBlackwoodToweringAlt from '../../../../public/images/genesis/blackwood/towering_alt_blackwood.jpg';
-import imageBlackwoodBareLeft from '../../../../public/images/genesis/blackwood/bare_left_blackwood.jpg';
-import imageBlackwoodBareRight from '../../../../public/images/genesis/blackwood/bare_right_blackwood.jpg';
-import imageBlackwoodBareFront from '../../../../public/images/genesis/blackwood/bare_front_blackwood.jpg';
-import imageBlackwoodBareBack from '../../../../public/images/genesis/blackwood/bare_back_blackwood.jpg';
+import imageBlackwoodRear from '../../../../../public/images/genesis/blackwood/rear_blackwood.jpg';
+import imageBlackwoodToweringAlt from '../../../../../public/images/genesis/blackwood/towering_alt_blackwood.jpg';
+import imageBlackwoodBareLeft from '../../../../../public/images/genesis/blackwood/bare_left_blackwood.jpg';
+import imageBlackwoodBareRight from '../../../../../public/images/genesis/blackwood/bare_right_blackwood.jpg';
+import imageBlackwoodBareFront from '../../../../../public/images/genesis/blackwood/bare_front_blackwood.jpg';
+import imageBlackwoodBareBack from '../../../../../public/images/genesis/blackwood/bare_back_blackwood.jpg';
 import SpecsCell from '@/components/SpecsCell';
 import SpecsCellTitle from '@/components/SpecsCellTitle';
 import SpecsGrid from '@/components/SpecsGrid';
 import OrderNowSection from '@/constructs/OrderNowSection';
+import ProductGallery from '@/components/ProductGallery';
 
 const Page = () => {
   return (
     <div>
       <Section tight>
         <div className={s.productContainer}>
-          <div className={s.productImages}>
-            <Image
-              src={imageBlackwoodMain}
-              alt=""
-              sizes="(max-width: 780px) 100vw, 80vw"
-              priority
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
-            <Image
-              src={imageBlackwoodPower1}
-              alt=""
-              sizes="(max-width: 780px) 50vw, 30vw"
-              priority
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
-            <Image
-              src={imageBlackwoodPower2}
-              alt=""
-              sizes="(max-width: 780px) 50vw, 30vw"
-              priority
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
-            <Image
-              src={imageBlackwoodRear}
-              alt=""
-              sizes="(max-width: 780px) 50vw, 30vw"
-              priority
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
-            <Image
-              src={imageBlackwoodToweringAlt}
-              alt=""
-              sizes="(max-width: 780px) 50vw, 30vw"
-              priority
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
-            <Image
-              src={imageBlackwoodBareLeft}
-              alt=""
-              sizes="(max-width: 780px) 50vw, 30vw"
-              priority
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
-            <Image
-              src={imageBlackwoodBareFront}
-              alt=""
-              sizes="(max-width: 780px) 50vw, 30vw"
-              priority
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
-            <Image
-              src={imageBlackwoodBareBack}
-              alt=""
-              sizes="(max-width: 780px) 50vw, 30vw"
-              priority
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
-            <Image
-              src={imageBlackwoodBareRight}
-              alt=""
-              sizes="(max-width: 780px) 50vw, 30vw"
-              priority
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
-          </div>
+          <ProductGallery
+            images={[
+              { src: imageBlackwoodMain, alt: '' },
+              { src: imageBlackwoodPower1, alt: '' },
+              { src: imageBlackwoodPower2, alt: '' },
+              { src: imageBlackwoodRear, alt: '' },
+              { src: imageBlackwoodToweringAlt, alt: '' },
+              { src: imageBlackwoodBareLeft, alt: '' },
+              { src: imageBlackwoodBareFront, alt: '' },
+              { src: imageBlackwoodBareBack, alt: '' },
+              { src: imageBlackwoodBareRight, alt: '' },
+            ]}
+          />
           <div className={s.productDetails}>
             <span className={s.overTitle}>Mid Tower</span>
-            <h1>Genesis</h1>
+            <h1>Genesis - Blackwood</h1>
             {/* <span>$2,800</span> */}
-            <span>Tax included.</span>
+            {/* <span>Tax included.</span> */}
             <p>The Genesis is the case that marks the beginning of Woodfort.</p>
             <p>
               Embodying Woodfort's alignment with nature, four hand crafted
@@ -142,17 +64,17 @@ const Page = () => {
             </p>
             <p>
               The wood has been finished with a durable and heat resistant
-              varnish protecting the tiumber from thew warmth generated byu the
+              varnish protecting the timber from the warmth generated by the
               compouter components and providing a lustrous satin to semi-gloss
               sheen.
             </p>
-            <blockquote>
+            <blockquote className={s.quote}>
               "It seems to me that the natural world is the greatest source of
               excitement; the greatest source of visual beauty; the greatest
               source of intellectual interest. It is the greatest source of so
               much in life that makes life worth living."
             </blockquote>
-            <span>- Sir David Attenborough</span>
+            <span className={s.quoteSource}>- Sir David Attenborough</span>
             <h3>Disclaimer</h3>
             <p>
               This item is made of wood so the texture and colour tone will vary
@@ -162,7 +84,7 @@ const Page = () => {
               Lastly, this is a handmade product and as such minor imperfections
               may exist that betray my human fallibility.
             </p>
-            <Link href="/">Share</Link>
+            {/* <Link href="/">Share</Link> */}
           </div>
         </div>
       </Section>
@@ -291,7 +213,7 @@ const Page = () => {
           <ProductsCard
             title="Genesis - Tasmanian Oak"
             // description="$2,800"
-            href=""
+            href="/cases/genesis/tasmanian-oak"
             alt=""
             src={imageTasOakMain}
             srcHover={imageTasOakPower1}
@@ -299,7 +221,7 @@ const Page = () => {
           <ProductsCard
             title="Genesis - Walnut"
             // description="$2,800"
-            href=""
+            href="/cases/genesis/walnut"
             alt=""
             src={imageWalnutMain}
             srcHover={imageWalnutPower1}
@@ -307,7 +229,7 @@ const Page = () => {
           <ProductsCard
             title="Genesis - Blackwood"
             // description="$2,800"
-            href=""
+            href="/cases/genesis/blackwood"
             alt=""
             src={imageBlackwoodMain}
             srcHover={imageBlackwoodPower1}

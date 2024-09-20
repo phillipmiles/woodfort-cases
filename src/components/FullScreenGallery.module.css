@@ -1,0 +1,48 @@
+.container {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+
+  z-index: 1000;
+  width: 100vw;
+  min-height: 100vh;
+  transition: visibility 300ms, opacity 300ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.closeIcon {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  display: block;
+  top: 16px;
+  right: 16px;
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+  color: white;
+  transition: all 150ms;
+  cursor: pointer;
+}
+
+.closeIcon:hover {
+  color: black;
+  background: white;
+}
