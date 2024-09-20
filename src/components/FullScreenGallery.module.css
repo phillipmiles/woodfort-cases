@@ -8,7 +8,7 @@
   min-height: 100vh;
   transition: visibility 300ms, opacity 300ms;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
@@ -24,7 +24,6 @@
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: -1;
 }
 
 .closeIcon {
@@ -45,4 +44,24 @@
 .closeIcon:hover {
   color: black;
   background: white;
+}
+
+.carouselContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.carouselItem {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  max-height: 100vh;
+}
+
+.image {
+  position: relative;
+  z-index: 1;
 }

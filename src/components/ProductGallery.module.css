@@ -9,3 +9,7 @@
 .container img:first-child {
   grid-column: span 2;
 }
+
+.image {
+  cursor: pointer;
+}

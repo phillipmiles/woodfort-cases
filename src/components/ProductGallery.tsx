@@ -13,10 +13,12 @@ interface Props {
 
 const ProductGallery = ({ images }: Props) => {
   const [showFullscreen, setShowFullScreen] = useState(false);
+  const [galleryIndex, setGalleryIndex] = useState(0);
 
-  const handleClickImage = () => {
+  const handleClickImage = (index: number) => {
     document.body.style.overflow = 'hidden';
     setShowFullScreen(true);
+    setGalleryIndex(index);
   };
 
   const handleCloseFullscreen = () => {
@@ -27,7 +29,8 @@ const ProductGallery = ({ images }: Props) => {
   return (
     <div className={s.container}>
       <Image
-        onClick={handleClickImage}
+        className={s.image}
+        onClick={() => handleClickImage(0)}
         src={images[0].src}
         alt={images[0].alt}
         sizes="(max-width: 780px) 100vw, 80vw"
@@ -39,8 +42,9 @@ const ProductGallery = ({ images }: Props) => {
       />
       {images.slice(1).map((image, index) => (
         <Image
+          className={s.image}
           key={index}
-          onClick={handleClickImage}
+          onClick={() => handleClickImage(index + 1)}
           src={image.src}
           alt={image.alt}
           sizes="(max-width: 780px) 50vw, 30vw"
@@ -51,6 +55,7 @@ const ProductGallery = ({ images }: Props) => {
         />
       ))}
       <FullScreenGallery
+        index={galleryIndex}
         showFullscreen={showFullscreen}
         onClose={handleCloseFullscreen}
         images={images}

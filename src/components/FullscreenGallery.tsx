@@ -12,25 +12,39 @@ interface Props {
     src: string | StaticImageData;
     alt: string;
   }[];
+  index: number;
 }
 
-const FullScreenGallery = ({ images, showFullscreen, onClose }: Props) => {
+const FullScreenGallery = ({
+  index,
+  images,
+  showFullscreen,
+  onClose,
+}: Props) => {
   return createPortal(
     <div className={`${s.container} ${showFullscreen ? s.visible : ''}`}>
-      <div className={s.background} onClick={onClose} />
-      {images.map((image, index) => (
-        <Image
-          key={index}
-          src={image.src}
-          alt={image.alt}
-          sizes={'100vh'}
-          style={{
-            width: 'auto',
-            maxWidth: '100%',
-            height: '100%',
-          }}
-        />
-      ))}
+      <div
+        className={s.carouselContainer}
+        style={{ transform: `translateX(${-100 * index}vw)` }}
+      >
+        {images.map((image, index) => (
+          <div className={s.carouselItem}>
+            <Image
+              className={s.image}
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              sizes={'100vw'}
+              style={{
+                width: 'auto',
+                maxWidth: '100%',
+                height: '100%',
+              }}
+            />
+            <div className={s.background} onClick={onClose} />
+          </div>
+        ))}
+      </div>
 
       <button onClick={onClose} className={s.closeIcon}>
         <FontAwesomeIcon icon={faXmark} size="xl" />
