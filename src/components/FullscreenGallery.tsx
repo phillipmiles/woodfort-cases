@@ -37,8 +37,9 @@ const FullScreenGallery = ({
               sizes={'100vw'}
               style={{
                 width: 'auto',
+                height: 'auto',
                 maxWidth: '100%',
-                height: '100%',
+                maxHeight: '100%',
               }}
             />
             <div className={s.background} onClick={onClose} />
