@@ -26,6 +26,26 @@ const ProductGallery = ({ images }: Props) => {
     setShowFullScreen(false);
   };
 
+  const handleNext = () => {
+    setGalleryIndex((state) => {
+      if (state === images.length - 1) {
+        return 0;
+      } else {
+        return state + 1;
+      }
+    });
+  };
+
+  const handlePrevious = () => {
+    setGalleryIndex((state) => {
+      if (state === 0) {
+        return images.length - 1;
+      } else {
+        return state - 1;
+      }
+    });
+  };
+
   return (
     <div className={s.container}>
       <Image
@@ -58,6 +78,8 @@ const ProductGallery = ({ images }: Props) => {
         index={galleryIndex}
         showFullscreen={showFullscreen}
         onClose={handleCloseFullscreen}
+        onNext={handleNext}
+        onPrevious={handlePrevious}
         images={images}
       />
     </div>

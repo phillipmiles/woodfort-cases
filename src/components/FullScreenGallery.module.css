@@ -6,7 +6,7 @@
   z-index: 1000;
   width: 100vw;
   min-height: 100vh;
-  transition: visibility 300ms, opacity 300ms;
+  transition: visibility 0ms, opacity 300ms;
   display: flex;
   /* justify-content: center; */
   align-items: center;
@@ -15,6 +15,7 @@
 .container.visible {
   visibility: visible;
   opacity: 1;
+  transition: visibility 300ms, opacity 300ms;
 }
 
 .background {
@@ -26,13 +27,11 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.closeIcon {
+.icon {
   position: absolute;
   background-color: transparent;
   border: none;
   display: block;
-  top: 16px;
-  right: 16px;
   border-radius: 100%;
   width: 48px;
   height: 48px;
@@ -41,14 +40,28 @@
   cursor: pointer;
 }
 
-.closeIcon:hover {
+.icon:hover {
   color: black;
   background: white;
+}
+
+.closeIcon {
+  top: 16px;
+  right: 16px;
+}
+
+.nextIcon {
+  right: 16px;
+}
+
+.previousIcon {
+  left: 16px;
 }
 
 .carouselContainer {
   display: flex;
   flex-direction: row;
+  transition: transform 300ms;
 }
 
 .carouselItem {
@@ -64,6 +77,16 @@
 .image {
   position: relative;
   z-index: 1;
-  /* flex-grow: 0;
-  flex-shrink: 0; */
+}
+
+@media (max-width: 1024px) {
+  .carouselItem {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 780px) {
+  .carouselItem {
+    padding: 16px;
+  }
 }
