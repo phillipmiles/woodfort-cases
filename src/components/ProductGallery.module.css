@@ -1,15 +1,94 @@
 .container {
+  flex-grow: 1;
+}
+
+.galleryGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 8px;
   row-gap: 8px;
-  flex-grow: 1;
 }
 
-.container img:first-child {
+.galleryGrid img:first-child {
   grid-column: span 2;
 }
 
 .image {
   cursor: pointer;
+}
+
+.fullscreenIcon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: white;
+  width: 48px;
+  height: 48px;
+  display: block;
+  border-radius: 100%;
+  z-index: 100;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+  transition: transform 300ms;
+}
+
+.fullscreenIcon:hover {
+  transition: transform 150ms;
+  transform: scale(1.1);
+}
+
+.carouselContainer {
+  display: none;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.carouselControls {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-foreground-soft);
+}
+
+.carouselControlIcon {
+  display: block;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.carouselIndex {
+  margin: 0 40px;
+  display: block;
+}
+
+.carouselRail {
+  display: flex;
+  /* margin-left: 16px; */
+  /* margin-right: 16px; */
+  /* gap: 8px; */
+  transition: transform 300ms;
+  margin-left: -3px;
+  margin-right: -3px;
+}
+
+.carouselItem {
+  flex-shrink: 0;
+  width: calc(100vw - 26px);
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+.carouselItem:last-child {
+  /* padding-right: 0; */
+}
+
+@media (max-width: 780px) {
+  .carouselContainer {
+    display: block;
+  }
+  .galleryGrid {
+    display: none;
+  }
 }
