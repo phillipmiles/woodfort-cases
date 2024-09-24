@@ -17,20 +17,12 @@ import imageBlackwoodPower1 from '../../public/images/genesis/blackwood/power1_b
 import imageWalnutPower1 from '../../public/images/genesis/walnut/power1_walnut.jpg';
 import imageWipSandingAltBW from '../../public/images/wip_sanding_alt_blackwhite.jpg';
 import OrderNowSection from '@/constructs/OrderNowSection';
+import Banner from '@/components/Banner';
 
 export default function Home() {
   return (
     <div className={s.page}>
-      <div className={s.banner}>
-        <Image
-          className={s.bannerImage}
-          src={imageComposite}
-          alt=""
-          priority
-          sizes="100vw"
-          fill
-        />
-      </div>
+      <Banner src={imageComposite} alt="" />
       <Section narrow comfort center>
         <h2>Handcrafted Luxury PC Cases</h2>
         <p>

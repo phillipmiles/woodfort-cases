@@ -10,12 +10,14 @@ interface Props {
   tight?: boolean;
   soft?: boolean;
   center?: boolean;
+  callout?: boolean;
 }
 
 const Section = ({
   children,
   narrow,
   comfort,
+  callout,
   tight,
   primary,
   soft,
@@ -30,6 +32,7 @@ const Section = ({
         ${primary ? s.primary : ''}
         ${soft ? s.soft : ''}
         ${center ? s.center : ''}
+        ${callout ? s.callout : ''}
       `}
     >
       <ContentWidth narrow={narrow}>{children}</ContentWidth>

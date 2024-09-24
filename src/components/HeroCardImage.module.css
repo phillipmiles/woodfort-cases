@@ -1,6 +1,11 @@
 .container {
   position: relative;
-  width: 100%;
+  width: 40%;
+  flex-shrink: 0;
+}
+
+.large {
+  width: 60%;
 }
 
 .image {
@@ -9,6 +14,7 @@
 
 @media (max-width: 780px) {
   .container {
+    width: 100%;
     height: 400px;
     order: -1;
   }

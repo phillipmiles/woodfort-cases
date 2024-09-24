@@ -33,6 +33,11 @@
   opacity: 0.7;
 }
 
+.callout p {
+  font-size: 24px;
+  /* opacity: 1; */
+}
+
 @media (max-width: 1024px) {
   .comfort {
     padding-top: 64px;

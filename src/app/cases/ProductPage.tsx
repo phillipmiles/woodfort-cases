@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   title: 'Genesis - Blackwood | Woodfort Cases',
 };
 
-const Page = () => {
+const ProductPage = ({ title, price, description, images }) => {
   return (
     <div>
       <Section tight>
@@ -51,8 +51,8 @@ const Page = () => {
           />
           <div className={s.productDetails}>
             <span className={s.overTitle}>Mid Tower</span>
-            <h1>Genesis - Blackwood</h1>
-            {/* <span>$2,800</span> */}
+            <h1>{title}</h1>
+            {/* <span>{price}</span> */}
             {/* <span>Tax included.</span> */}
             <p>The Genesis is the case that marks the beginning of Woodfort.</p>
             <p>
@@ -243,4 +243,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default ProductPage;
