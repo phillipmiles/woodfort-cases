@@ -1,0 +1,35 @@
+.productContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.productDetails {
+  max-width: 30%;
+  width: 100%;
+}
+
+.overTitle {
+  text-transform: uppercase;
+  font-size: var(--font-small);
+}
+
+.quote {
+  font-style: italic;
+}
+
+.quoteSource {
+  display: block;
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .productContainer {
+    display: block;
+  }
+
+  .productDetails {
+    max-width: none;
+  }
+}

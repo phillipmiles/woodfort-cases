@@ -2,27 +2,20 @@ import s from './page.module.css';
 import Section from '@/components/Section';
 import type { Metadata } from 'next';
 
-import imageTasOakMain from '../../../../../public/images/genesis/tasoak/main_tasoak.jpg';
-import imageBlackwoodMain from '../../../../../public/images/genesis/blackwood/main_blackwood.jpg';
 import imageWalnutMain from '../../../../../public/images/genesis/walnut/main_walnut.jpg';
-import imageTasOakPower1 from '../../../../../public/images/genesis/tasoak/power1_tasoak.jpg';
-import imageBlackwoodPower1 from '../../../../../public/images/genesis/blackwood/power1_blackwood.jpg';
 import imageWalnutPower1 from '../../../../../public/images/genesis/walnut/power1_walnut.jpg';
-import imageTasOakPower2 from '../../../../../public/images/genesis/tasoak/power2_tasoak.jpg';
-import imageBlackwoodPower2 from '../../../../../public/images/genesis/blackwood/power2_blackwood.jpg';
 import imageWalnutPower2 from '../../../../../public/images/genesis/walnut/power2_walnut.jpg';
-
-import imageBlackwoodRear from '../../../../../public/images/genesis/blackwood/rear_blackwood.jpg';
-import imageBlackwoodToweringAlt from '../../../../../public/images/genesis/blackwood/towering_alt_blackwood.jpg';
-import imageBlackwoodBareLeft from '../../../../../public/images/genesis/blackwood/bare_left_blackwood.jpg';
-import imageBlackwoodBareRight from '../../../../../public/images/genesis/blackwood/bare_right_blackwood.jpg';
-import imageBlackwoodBareFront from '../../../../../public/images/genesis/blackwood/bare_front_blackwood.jpg';
-import imageBlackwoodBareBack from '../../../../../public/images/genesis/blackwood/bare_back_blackwood.jpg';
+import imageWalnutRear from '../../../../../public/images/genesis/walnut/rear_walnut.jpg';
+import imageWalnutToweringAlt from '../../../../../public/images/genesis/walnut/towering_alt_walnut.jpg';
+import imageWalnutBareLeft from '../../../../../public/images/genesis/walnut/bare_left_walnut.jpg';
+import imageWalnutBareRight from '../../../../../public/images/genesis/walnut/bare_right_walnut.jpg';
+import imageWalnutBareFront from '../../../../../public/images/genesis/walnut/bare_front_walnut.jpg';
+import imageWalnutBareBack from '../../../../../public/images/genesis/walnut/bare_back_walnut.jpg';
 
 import ProductGallery from '@/components/ProductGallery';
 
 export const metadata: Metadata = {
-  title: 'Genesis - Blackwood | Woodfort Cases',
+  title: 'Genesis - Walnut | Woodfort Cases',
 };
 
 const Page = () => {
@@ -31,20 +24,20 @@ const Page = () => {
       <div className={s.productContainer}>
         <ProductGallery
           images={[
-            { src: imageBlackwoodMain, alt: '' },
-            { src: imageBlackwoodPower1, alt: '' },
-            { src: imageBlackwoodPower2, alt: '' },
-            { src: imageBlackwoodRear, alt: '' },
-            { src: imageBlackwoodToweringAlt, alt: '' },
-            { src: imageBlackwoodBareLeft, alt: '' },
-            { src: imageBlackwoodBareFront, alt: '' },
-            { src: imageBlackwoodBareBack, alt: '' },
-            { src: imageBlackwoodBareRight, alt: '' },
+            { src: imageWalnutMain, alt: '' },
+            { src: imageWalnutPower1, alt: '' },
+            { src: imageWalnutPower2, alt: '' },
+            { src: imageWalnutRear, alt: '' },
+            { src: imageWalnutToweringAlt, alt: '' },
+            { src: imageWalnutBareLeft, alt: '' },
+            { src: imageWalnutBareFront, alt: '' },
+            { src: imageWalnutBareBack, alt: '' },
+            { src: imageWalnutBareRight, alt: '' },
           ]}
         />
         <div className={s.productDetails}>
           <span className={s.overTitle}>Mid Tower</span>
-          <h1>Genesis - Blackwood</h1>
+          <h1>Genesis - Walnut</h1>
           {/* <span>$2,800</span> */}
           {/* <span>Tax included.</span> */}
           <p>The Genesis is the case that marks the beginning of Woodfort.</p>
@@ -54,8 +47,8 @@ const Page = () => {
             glow of natural timber.
           </p>
           <p>
-            This case is made from Blackwood, a prized Australian timber that
-            features golden rown tones meixed with some reds and darker streaks.
+            This case is made from the recognisable American Walnut which
+            displays deep chocolate brown colours.
           </p>
           <p>
             The wood has been finished with a durable and heat resistant varnish
