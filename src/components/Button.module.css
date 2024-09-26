@@ -5,7 +5,13 @@
   padding: 16px 32px;
   box-shadow: 0px 0px 0px 0px var(--color-foreground);
   transition: box-shadow 100ms;
+  border: none;
   text-decoration: none;
+  font-size: var(--font-regular);
+  letter-spacing: var(--font-letterspacing);
+  font-family: var(--font-family);
+  min-width: 140px;
+  cursor: pointer;
 }
 
 .container:hover {

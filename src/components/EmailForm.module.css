@@ -1,0 +1,10 @@
+.fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.message {
+  grid-column: 1 / 3;
+}

@@ -2,7 +2,7 @@ import s from './page.module.css';
 import HeroCard from '@/components/HeroCard';
 import HeroCardImage from '@/components/HeroCardImage';
 import HeroCardContent from '@/components/HeroCardContent';
-import LinkButton from '@/components/LinkButton';
+import Button from '@/components/Button';
 import Section from '@/components/Section';
 import ProductsCard from '@/constructs/ProductsCard';
 import ProductsGrid from '@/components/ProductsGrid';
@@ -60,9 +60,9 @@ export default function Home() {
               Melbourne, Australia he uses a variety of locally sourced and
               international timbers.
             </p>
-            <LinkButton href="/about" className={s.sectionCTA}>
+            <Button href="/about" className={s.sectionCTA}>
               Learn more
-            </LinkButton>
+            </Button>
           </HeroCardContent>
           <HeroCardImage
             src={imageWipSandingAltBW}

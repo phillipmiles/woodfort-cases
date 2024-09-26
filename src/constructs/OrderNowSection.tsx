@@ -1,4 +1,4 @@
-import LinkButton from '@/components/LinkButton';
+import Button from '@/components/Button';
 import Section from '@/components/Section';
 import s from './OrderNowSection.module.css';
 
@@ -10,9 +10,9 @@ const OrderNowSection = () => {
         Woodfort cases are made to order and may be scheduled for production
         months in advance. Enquire below to secure the next available space.
       </p>
-      <LinkButton href="/contact" invert className={s.cta}>
+      <Button href="/contact" invert className={s.cta}>
         Enquire
-      </LinkButton>
+      </Button>
     </Section>
   );
 };

@@ -1,3 +1,5 @@
+import s from './page.module.css';
+import EmailForm from '@/components/EmailForm';
 import Section from '@/components/Section';
 
 const Page = () => {
@@ -11,6 +13,7 @@ const Page = () => {
         use the form below.
       </p>
       <p>I look forward to hearing from you.</p>
+      <EmailForm className={s.form} />
     </Section>
   );
 };

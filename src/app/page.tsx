@@ -3,7 +3,7 @@ import s from './page.module.css';
 import HeroCard from '@/components/HeroCard';
 import HeroCardImage from '@/components/HeroCardImage';
 import HeroCardContent from '@/components/HeroCardContent';
-import LinkButton from '@/components/LinkButton';
+import Button from '@/components/Button';
 import Section from '@/components/Section';
 import ProductsCard from '@/constructs/ProductsCard';
 import ProductsGrid from '@/components/ProductsGrid';
@@ -44,12 +44,12 @@ export default function Home() {
               wooden panels cover the cold aluminium structure beneath with the
               soothing glow of natural timber.
             </p>
-            <LinkButton
+            <Button
               href="/cases/genesis/tasmanian-oak"
               className={s.sectionCTA}
             >
               Learn more
-            </LinkButton>
+            </Button>
           </HeroCardContent>
         </HeroCard>
         <h3>Available in 3 different timbers</h3>
@@ -91,9 +91,9 @@ export default function Home() {
               Melbourne, Australia he uses a variety of locally sourced and
               international timbers.
             </p>
-            <LinkButton href="/about" className={s.sectionCTA}>
+            <Button href="/about" className={s.sectionCTA}>
               Learn more
-            </LinkButton>
+            </Button>
           </HeroCardContent>
           <HeroCardImage
             src={imageWipSandingAltBW}

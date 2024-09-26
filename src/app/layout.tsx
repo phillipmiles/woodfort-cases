@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import './globals.css';
 import Header from '@/constructs/Header';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import Footer from '@/constructs/Footer';
@@ -20,6 +19,7 @@ export const metadata: Metadata = {
   description:
     'Woodfort Cases make beautiful handcrafted wood panelled PC cases that bring a calming warmth to your home office or gaming PC.',
 };
+import './globals.css';
 
 export default function RootLayout({
   children,
