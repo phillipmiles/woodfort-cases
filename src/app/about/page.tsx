@@ -8,6 +8,11 @@ import s from './page.module.css';
 import imageSanding from '../../../public/images/wip_sanding_alt_blackwhite.jpg';
 import imageCloseup from '../../../public/images/wip_closeup_blackwhite.jpg';
 import imagePrototype from '../../../public/images/prototype_blackwhite.jpg';
+import imageRouting from '../../../public/images/wip_routing_blackwhite.jpg';
+import imageBuffing from '../../../public/images/wip_buffing_blackwhite.jpg';
+import imagePainting from '../../../public/images/wip_painting_blackwhite.jpg';
+
+import Image from 'next/image';
 
 const Page = () => {
   return (
@@ -75,6 +80,35 @@ const Page = () => {
             <p>Finally, in May 2023, Woodfort Cases was launched.</p>
           </HeroCardContent>
         </HeroCard>
+      </Section>
+      <Section>
+        <div className={s.imageGroupContainer}>
+          <div className={s.imageGroupItem}>
+            <Image
+              src={imagePainting}
+              //fill
+              sizes="100vw"
+              alt=""
+            />
+          </div>
+
+          <div className={s.imageGroupItem}>
+            <Image
+              src={imageRouting}
+              // fill
+              alt=""
+              sizes={'(max-width: 780px) 50vw, 100vw'}
+            />
+          </div>
+          <div className={s.imageGroupItem}>
+            <Image
+              src={imageBuffing}
+              // fill
+              alt=""
+              sizes={'(max-width: 780px) 50vw, 100vw'}
+            />
+          </div>
+        </div>
       </Section>
       <Section comfort narrow>
         <h2>My process</h2>
