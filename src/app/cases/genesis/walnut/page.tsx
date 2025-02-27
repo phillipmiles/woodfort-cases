@@ -42,9 +42,9 @@ const Page = () => {
           {/* <span>Tax included.</span> */}
           <p>The Genesis is the case that marks the beginning of Woodfort.</p>
           <p>
-            Embodying Woodfort's alignment with nature, four hand crafted wooden
-            panels cover the cold aluminum structure beneath with the soothing
-            glow of natural timber.
+            Embodying Woodfort&pos;s alignment with nature, four hand crafted
+            wooden panels cover the cold aluminum structure beneath with the
+            soothing glow of natural timber.
           </p>
           <p>
             This case is made from the recognisable American Walnut which
@@ -56,10 +56,10 @@ const Page = () => {
             components and providing a lustrous satin to semi-gloss sheen.
           </p>
           <blockquote className={s.quote}>
-            "It seems to me that the natural world is the greatest source of
-            excitement; the greatest source of visual beauty; the greatest
+            &quot;It seems to me that the natural world is the greatest source
+            of excitement; the greatest source of visual beauty; the greatest
             source of intellectual interest. It is the greatest source of so
-            much in life that makes life worth living."
+            much in life that makes life worth living.&quot;
           </blockquote>
           <span className={s.quoteSource}>- Sir David Attenborough</span>
           <h3>Disclaimer</h3>

@@ -1,8 +1,8 @@
 import s from './page.module.css';
-import HeroCard from '@/components/HeroCard';
-import HeroCardImage from '@/components/HeroCardImage';
-import HeroCardContent from '@/components/HeroCardContent';
-import Button from '@/components/Button';
+// import HeroCard from '@/components/HeroCard';
+// import HeroCardImage from '@/components/HeroCardImage';
+// import HeroCardContent from '@/components/HeroCardContent';
+// import Button from '@/components/Button';
 import Section from '@/components/Section';
 import ProductsCard from '@/constructs/ProductsCard';
 import ProductsGrid from '@/components/ProductsGrid';
@@ -13,8 +13,8 @@ import imageWalnutMain from '../../../public/images/genesis/walnut/main_walnut.j
 import imageTasOakPower1 from '../../../public/images/genesis/tasoak/power1_tasoak.jpg';
 import imageBlackwoodPower1 from '../../../public/images/genesis/blackwood/power1_blackwood.jpg';
 import imageWalnutPower1 from '../../../public/images/genesis/walnut/power1_walnut.jpg';
-import imageWipSandingAltBW from '../../../public/images/wip_sanding_alt_blackwhite.jpg';
-import OrderNowSection from '@/constructs/OrderNowSection';
+// import imageWipSandingAltBW from '../../../public/images/wip_sanding_alt_blackwhite.jpg';
+// import OrderNowSection from '@/constructs/OrderNowSection';
 
 export default function Home() {
   return (

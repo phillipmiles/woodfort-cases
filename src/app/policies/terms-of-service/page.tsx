@@ -113,7 +113,7 @@ const Page = () => {
         </Link>
         . We have made every effort to display as accurately as possible the
         colours and images of our products that appear at the store. We cannot
-        guarantee that your computer monitor's display of any colour will be
+        guarantee that your computer monitor&pos;s display of any colour will be
         accurate. We reserve the right, but are not obligated, to limit the
         sales of our products or Services to any person, geographic region or
         jurisdiction. We may exercise this right on a case-by-case basis. We
@@ -186,10 +186,10 @@ const Page = () => {
         products, or Services of third-parties. We are not liable for any harm
         or damages related to the purchase or use of goods, Services, resources,
         content, or any other transactions made in connection with any
-        third-party websites. Please review carefully the third-party's policies
-        and practices and make sure you understand them before you engage in any
-        transaction. Complaints, claims, concerns, or questions regarding
-        third-party products should be directed to the third-party.
+        third-party websites. Please review carefully the third-party&pos;s
+        policies and practices and make sure you understand them before you
+        engage in any transaction. Complaints, claims, concerns, or questions
+        regarding third-party products should be directed to the third-party.
       </p>
 
       <h2>SECTION 9 - USER COMMENTS, FEEDBACK AND OTHER SUBMISSIONS</h2>
@@ -197,8 +197,8 @@ const Page = () => {
         If, at our request, you send certain specific submissions (for example
         contest entries) or without a request from us, you send creative ideas,
         suggestions, proposals, plans, or other materials, whether online, by
-        email, by postal mail, or otherwise (collectively, 'comments'), you
-        agree that we may, at any time, without restriction, edit, copy,
+        email, by postal mail, or otherwise (collectively, &pos;comments&pos;),
+        you agree that we may, at any time, without restriction, edit, copy,
         publish, distribute, translate and otherwise use in any medium any
         comments that you forward to us. We are and shall be under no obligation
         (1) to maintain any comments in confidence; (2) to pay compensation for
@@ -278,28 +278,29 @@ const Page = () => {
         time, without notice to you. You expressly agree that your use of, or
         inability to use, the Service is at your sole risk. The Service and all
         products and Services delivered to you through the Service are (except
-        as expressly stated by us) provided 'as is' and 'as available' for your
-        use, without any representation, warranties or conditions of any kind,
-        either express or implied, including all implied warranties or
-        conditions of merchantability, merchantable quality, fitness for a
-        particular purpose, durability, title, and non-infringement. In no case
-        shall Woodfort, our directors, officers, employees, affiliates, agents,
-        contractors, interns, suppliers, Service providers or licensors be
-        liable for any injury, loss, claim, or any direct, indirect, incidental,
-        punitive, special, or consequential damages of any kind, including,
-        without limitation lost profits, lost revenue, lost savings, loss of
-        data, replacement costs, or any similar damages, whether based in
-        contract, tort (including negligence), strict liability or otherwise,
-        arising from your use of any of the Service or any products procured
-        using the Service, or for any other claim related in any way to your use
-        of the Service or any product, including, but not limited to, any errors
-        or omissions in any content, or any loss or damage of any kind incurred
-        as a result of the use of the Service or any content (or product)
-        posted, transmitted, or otherwise made available via the Service, even
-        if advised of their possibility. Because some states or jurisdictions do
-        not allow the exclusion or the limitation of liability for consequential
-        or incidental damages, in such states or jurisdictions, our liability
-        shall be limited to the maximum extent permitted by law.
+        as expressly stated by us) provided &pos;as is&pos; and &pos;as
+        available&pos; for your use, without any representation, warranties or
+        conditions of any kind, either express or implied, including all implied
+        warranties or conditions of merchantability, merchantable quality,
+        fitness for a particular purpose, durability, title, and
+        non-infringement. In no case shall Woodfort, our directors, officers,
+        employees, affiliates, agents, contractors, interns, suppliers, Service
+        providers or licensors be liable for any injury, loss, claim, or any
+        direct, indirect, incidental, punitive, special, or consequential
+        damages of any kind, including, without limitation lost profits, lost
+        revenue, lost savings, loss of data, replacement costs, or any similar
+        damages, whether based in contract, tort (including negligence), strict
+        liability or otherwise, arising from your use of any of the Service or
+        any products procured using the Service, or for any other claim related
+        in any way to your use of the Service or any product, including, but not
+        limited to, any errors or omissions in any content, or any loss or
+        damage of any kind incurred as a result of the use of the Service or any
+        content (or product) posted, transmitted, or otherwise made available
+        via the Service, even if advised of their possibility. Because some
+        states or jurisdictions do not allow the exclusion or the limitation of
+        liability for consequential or incidental damages, in such states or
+        jurisdictions, our liability shall be limited to the maximum extent
+        permitted by law.
       </p>
 
       <h2>SECTION 14 - INDEMNIFICATION</h2>

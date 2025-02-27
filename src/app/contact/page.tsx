@@ -7,8 +7,8 @@ const Page = () => {
     <Section tight narrow>
       <h1>Contact</h1>
       <p>
-        If you're interested in comissioning one of my PC cases or would like to
-        get in touch with me for any other reason then email me at{' '}
+        If you&pos;re interested in comissioning one of my PC cases or would
+        like to get in touch with me for any other reason then email me at{' '}
         <a href="mailto:contact@woodfort.com.au">contact@woodfort.com.au</a> or
         use the form below.
       </p>
