@@ -73,11 +73,11 @@ const Header = () => {
               Home
             </DrawerNavigationItem>
             <DrawerNavigationItem
-              href="/shop"
-              active={pathname === '/shop'}
+              href="/cases"
+              active={pathname === '/cases'}
               onClick={toggleDrawer}
             >
-              Shop
+              Cases
             </DrawerNavigationItem>
             <DrawerNavigationItem
               href="/about"
