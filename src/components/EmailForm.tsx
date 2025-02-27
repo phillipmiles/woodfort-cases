@@ -23,7 +23,7 @@ const EmailForm = ({ className }: Props) => {
           placeholder="Name"
           id="form_name"
           value={name}
-          onChange={(e) => {
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
             setName(e.target.value);
           }}
         />
@@ -43,7 +43,7 @@ const EmailForm = ({ className }: Props) => {
           placeholder="Write your message"
           name="message"
           value={message}
-          onChange={(e) => {
+          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => {
             setMessage(e.target.value);
           }}
           rows={5}

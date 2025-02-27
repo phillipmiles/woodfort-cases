@@ -1,7 +1,7 @@
 import s from './InputTextArea.module.css';
 
-interface Props {
-  className: string;
+interface Props extends React.InputHTMLAttributes<HTMLTextAreaElement> {
+  rows?: number;
 }
 
 const InputTextArea = ({ className, ...props }: Props) => {
