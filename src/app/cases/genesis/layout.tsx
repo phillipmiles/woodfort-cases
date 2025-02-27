@@ -121,23 +121,14 @@ const Layout = ({ children }: Props) => {
             <p>
               1 x{' '}
               <Link
-                href="https://nzxt.com/en-AU/product/h7-flow"
+                href="https://nzxt.com/en-AU/product/h7-flow-2022"
                 target="_blank"
               >
-                NZXT H7 Flow case
+                NZXT H7 Flow case (2022)
               </Link>{' '}
               in Black
             </p>
-            <p>
-              2 x{' '}
-              <Link
-                href="https://nzxt.com/en-AU/collection/f-series"
-                target="_blank"
-              >
-                NZXT F Series Quiet
-              </Link>{' '}
-              120mm Fans
-            </p>
+            <p>2 x NZXT Quiet Airflow 120mm Fans</p>
           </SpecsCell>
         </SpecsGrid>
       </Section>
