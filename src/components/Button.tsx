@@ -9,7 +9,7 @@ interface Props {
   children: React.ReactNode;
   invert?: boolean;
   disabled?: boolean;
-  type: 'button' | 'submit' | 'reset' | undefined;
+  type?: 'button' | 'submit' | 'reset' | undefined;
 }
 
 const Button = ({
