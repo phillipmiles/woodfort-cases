@@ -60,7 +60,7 @@ const ProductPage = ({ title }: Props) => {
             {/* <span>Tax included.</span> */}
             <p>The Genesis is the case that marks the beginning of Woodfort.</p>
             <p>
-              Embodying Woodfort&pos;s alignment with nature, four hand crafted
+              Embodying Woodfort&#39;s alignment with nature, four hand crafted
               wooden panels cover the cold aluminum structure beneath with the
               soothing glow of natural timber.
             </p>
@@ -76,10 +76,10 @@ const ProductPage = ({ title }: Props) => {
               sheen.
             </p>
             <blockquote className={s.quote}>
-              &quot;It seems to me that the natural world is the greatest source
+              &#34;It seems to me that the natural world is the greatest source
               of excitement; the greatest source of visual beauty; the greatest
               source of intellectual interest. It is the greatest source of so
-              much in life that makes life worth living.&quot;
+              much in life that makes life worth living.&#34;
             </blockquote>
             <span className={s.quoteSource}>- Sir David Attenborough</span>
             <h3>Disclaimer</h3>

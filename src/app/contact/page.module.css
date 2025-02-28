@@ -1,3 +1,16 @@
 .form {
   margin-top: 48px;
 }
+
+.successContainer {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.errorContainer {
+  color: red;
+  text-align: center;
+  margin-top: 48px;
+  border: 2px solid red;
+  padding: 24px;
+}

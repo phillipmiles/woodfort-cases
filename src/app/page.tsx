@@ -40,7 +40,7 @@ export default function Home() {
             <h2 className={s.heading}>The Genesis case</h2>
             <p>The Genesis is the case that marks the beginning of Woodfort.</p>
             <p>
-              Embodying Woodfort&pos;s alignment with nature, four hand crafted
+              Embodying Woodfort&#39;s alignment with nature, four hand crafted
               wooden panels cover the cold aluminium structure beneath with the
               soothing glow of natural timber.
             </p>

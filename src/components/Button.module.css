@@ -14,7 +14,7 @@
   cursor: pointer;
 }
 
-.container:hover {
+.container:hover:not(:disabled) {
   transition: box-shadow 150ms;
   box-shadow: 0px 0px 0px 1px var(--color-foreground);
 }
@@ -27,4 +27,9 @@
 
 .invert:hover {
   box-shadow: 0px 0px 0px 1px white;
+}
+
+.container:disabled {
+  opacity: 0.5;
+  cursor: unset;
 }

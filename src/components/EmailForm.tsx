@@ -1,31 +1,36 @@
 'use client';
 
 import s from './EmailForm.module.css';
-import { useState } from 'react';
+import { FormEventHandler, useState } from 'react';
 import InputText from './InputText';
 import InputTextArea from './InputTextArea';
 import Button from './Button';
 
 interface Props {
   className: string;
+  onSubmit: FormEventHandler<HTMLFormElement>;
+  loading: boolean;
+  error: boolean;
 }
 
-const EmailForm = ({ className }: Props) => {
+const EmailForm = ({ className, onSubmit, loading, error }: Props) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
   return (
-    <div className={`${className} ${s.container}`}>
+    <form className={`${className} ${s.container}`} onSubmit={onSubmit}>
       <div className={s.fields}>
         <InputText
           type="text"
           placeholder="Name"
-          id="form_name"
+          id="name"
           value={name}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
             setName(e.target.value);
           }}
+          disabled={loading}
+          required
         />
         <InputText
           type="email"
@@ -35,8 +40,9 @@ const EmailForm = ({ className }: Props) => {
           onChange={(e) => {
             setEmail(e.target.value);
           }}
+          disabled={loading}
+          required
         />
-
         <InputTextArea
           className={s.message}
           id="message"
@@ -47,10 +53,29 @@ const EmailForm = ({ className }: Props) => {
             setMessage(e.target.value);
           }}
           rows={5}
+          disabled={loading}
+          required
         ></InputTextArea>
       </div>
-      <Button>Send</Button>
-    </div>
+      <Button type="submit" disabled={loading}>
+        Send
+      </Button>
+      {/* {error && (
+        <div className={s.errorContainer}>
+          <p>
+            Woops! Something that I didn&#39;t account for went wrong when
+            submitting your message.
+          </p>
+          <p>
+            I very much would love to hear from you. Could you please email me
+            directly at{' '}
+            <a href="mailto:contact@woodfort.com.au">contact@woodfort.com.au</a>{' '}
+            instead.
+          </p>
+          <p>Sorry for the hassle.</p>
+        </div>
+      )} */}
+    </form>
   );
 };
 export default EmailForm;

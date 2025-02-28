@@ -113,7 +113,7 @@ const Page = () => {
         </Link>
         . We have made every effort to display as accurately as possible the
         colours and images of our products that appear at the store. We cannot
-        guarantee that your computer monitor&pos;s display of any colour will be
+        guarantee that your computer monitor&#39;s display of any colour will be
         accurate. We reserve the right, but are not obligated, to limit the
         sales of our products or Services to any person, geographic region or
         jurisdiction. We may exercise this right on a case-by-case basis. We
@@ -186,7 +186,7 @@ const Page = () => {
         products, or Services of third-parties. We are not liable for any harm
         or damages related to the purchase or use of goods, Services, resources,
         content, or any other transactions made in connection with any
-        third-party websites. Please review carefully the third-party&pos;s
+        third-party websites. Please review carefully the third-party&#39;s
         policies and practices and make sure you understand them before you
         engage in any transaction. Complaints, claims, concerns, or questions
         regarding third-party products should be directed to the third-party.
@@ -197,7 +197,7 @@ const Page = () => {
         If, at our request, you send certain specific submissions (for example
         contest entries) or without a request from us, you send creative ideas,
         suggestions, proposals, plans, or other materials, whether online, by
-        email, by postal mail, or otherwise (collectively, &pos;comments&pos;),
+        email, by postal mail, or otherwise (collectively, &#39;comments&#39;),
         you agree that we may, at any time, without restriction, edit, copy,
         publish, distribute, translate and otherwise use in any medium any
         comments that you forward to us. We are and shall be under no obligation
@@ -278,8 +278,8 @@ const Page = () => {
         time, without notice to you. You expressly agree that your use of, or
         inability to use, the Service is at your sole risk. The Service and all
         products and Services delivered to you through the Service are (except
-        as expressly stated by us) provided &pos;as is&pos; and &pos;as
-        available&pos; for your use, without any representation, warranties or
+        as expressly stated by us) provided &#39;as is&#39; and &#39;as
+        available&#39; for your use, without any representation, warranties or
         conditions of any kind, either express or implied, including all implied
         warranties or conditions of merchantability, merchantable quality,
         fitness for a particular purpose, durability, title, and
