@@ -10,10 +10,10 @@ interface Props {
   className: string;
   onSubmit: FormEventHandler<HTMLFormElement>;
   loading: boolean;
-  error: boolean;
+  error?: boolean;
 }
 
-const EmailForm = ({ className, onSubmit, loading, error }: Props) => {
+const EmailForm = ({ className, onSubmit, loading }: Props) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
