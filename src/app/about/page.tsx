@@ -13,6 +13,11 @@ import imageBuffing from '../../../public/images/wip_buffing_blackwhite.jpg';
 import imagePainting from '../../../public/images/wip_painting_blackwhite.jpg';
 
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About',
+};
 
 const Page = () => {
   return (

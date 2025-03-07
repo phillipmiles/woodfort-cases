@@ -15,12 +15,46 @@ import imageWalnutBareBack from '../../../../../public/images/genesis/walnut/bar
 import ProductGallery from '@/components/ProductGallery';
 
 export const metadata: Metadata = {
-  title: 'Genesis - Walnut | Woodfort Cases',
+  title: 'Genesis - Walnut',
 };
 
 const Page = () => {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'Genesis PC Case (Walnut) | Woodfort Cases',
+    image:
+      'https://www.woodfortcases.com/images/genesis/walnut/main_walnut.jpg',
+    description:
+      'Handmade wooden PC case made from the recognisable American Walnut which displays deep chocolate brown colours.',
+    brand: {
+      '@type': 'Brand',
+      name: 'Woodfort Cases',
+    },
+    offers: {
+      '@type': 'Offer',
+      offerCount: 1,
+      // TODO: CONSOLIDATE PRICE AMONGST ALL PAGES AND TILES
+      price: 2800,
+      priceCurrency: 'AUD',
+      itemCondition: 'https://schema.org/NewCondition',
+      availability: 'https://schema.org/InStock',
+      url: 'https://www.woodfortcases.com/cases/genesis/walnut',
+      seller: {
+        '@type': 'Organization',
+        name: 'Woodfort Cases',
+      },
+    },
+  };
+
   return (
     <Section tight>
+      {/* Add JSON-LD to your page */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      {/* ... */}
       <div className={s.productContainer}>
         <ProductGallery
           images={[
@@ -38,7 +72,7 @@ const Page = () => {
         <div className={s.productDetails}>
           <span className={s.overTitle}>Mid Tower</span>
           <h1>Genesis - Walnut</h1>
-          {/* <span>$2,800</span> */}
+          <p>$2,800 AUD</p>
           {/* <span>Tax included.</span> */}
           <p>The Genesis is the case that marks the beginning of Woodfort.</p>
           <p>

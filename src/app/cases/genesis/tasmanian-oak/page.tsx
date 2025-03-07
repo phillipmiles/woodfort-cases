@@ -15,12 +15,45 @@ import imageTasOakBareBack from '../../../../../public/images/genesis/tasoak/bar
 import ProductGallery from '@/components/ProductGallery';
 
 export const metadata: Metadata = {
-  title: 'Genesis - Tasmanian Oak | Woodfort Cases',
+  title: 'Genesis - Tasmanian Oak',
 };
 
 const Page = () => {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'Genesis PC Case (Tasmanian Oak) | Woodfort Cases',
+    image:
+      'https://www.woodfortcases.com/images/genesis/tasoak/main_tasoak.jpg',
+    description:
+      'Handmade wooden PC case made from Tasmanian Oak. Typically in a light straw colour this wood can vary slightly with shades of cream to pink.',
+    brand: {
+      '@type': 'Brand',
+      name: 'Woodfort Cases',
+    },
+    offers: {
+      '@type': 'Offer',
+      offerCount: 1,
+      // TODO: CONSOLIDATE PRICE AMONGST ALL PAGES AND TILES
+      price: 2800,
+      priceCurrency: 'AUD',
+      itemCondition: 'https://schema.org/NewCondition',
+      availability: 'https://schema.org/InStock',
+      url: 'https://www.woodfortcases.com/cases/genesis/tasmanian-oak',
+      seller: {
+        '@type': 'Organization',
+        name: 'Woodfort Cases',
+      },
+    },
+  };
   return (
     <Section tight>
+      {/* Add JSON-LD to your page */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      {/* ... */}
       <div className={s.productContainer}>
         <ProductGallery
           images={[
@@ -38,7 +71,7 @@ const Page = () => {
         <div className={s.productDetails}>
           <span className={s.overTitle}>Mid Tower</span>
           <h1>Genesis - Tasmanian Oak</h1>
-          {/* <span>$2,800</span> */}
+          <p>$2,800 AUD</p>
           {/* <span>Tax included.</span> */}
           <p>The Genesis is the case that marks the beginning of Woodfort.</p>
           <p>

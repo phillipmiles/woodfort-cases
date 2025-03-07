@@ -15,7 +15,17 @@ config.autoAddCss = false; /* eslint-disable import/first */
 const assistant = Assistant({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Woodfort Cases - Handmade wooden PC cases',
+  title: {
+    template: '%s | Woodfort Cases',
+    default: 'Woodfort Cases - Handmade wooden PC cases',
+  },
+  keywords: [
+    'Woodfort Cases',
+    'Wood PC Case',
+    'Wood Computer Case',
+    'PC Case',
+    'Computer Case',
+  ],
   description:
     'Woodfort Cases make beautiful handcrafted wood panelled PC cases that bring a calming warmth to your home office or gaming PC.',
 };

@@ -56,7 +56,7 @@ export default function Home() {
         <ProductsGrid>
           <ProductsCard
             title="Genesis - Tasmanian Oak"
-            // description="$2,800"
+            description="$2,800 AUD"
             href="/cases/genesis/tasmanian-oak"
             alt=""
             src={imageTasOakMain}
@@ -64,7 +64,7 @@ export default function Home() {
           />
           <ProductsCard
             title="Genesis - Walnut"
-            // description="$2,800"
+            description="$2,800 AUD"
             href="/cases/genesis/walnut"
             alt=""
             src={imageWalnutMain}
@@ -72,7 +72,7 @@ export default function Home() {
           />
           <ProductsCard
             title="Genesis - Blackwood"
-            // description="$2,800"
+            description="$2,800 AUD"
             href="/cases/genesis/blackwood"
             alt=""
             src={imageBlackwoodMain}

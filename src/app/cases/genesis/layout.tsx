@@ -138,7 +138,7 @@ const Layout = ({ children }: Props) => {
         <ProductsGrid>
           <ProductsCard
             title="Genesis - Tasmanian Oak"
-            // description="$2,800"
+            description="$2,800"
             href="/cases/genesis/tasmanian-oak"
             alt=""
             src={imageTasOakMain}
@@ -146,7 +146,7 @@ const Layout = ({ children }: Props) => {
           />
           <ProductsCard
             title="Genesis - Walnut"
-            // description="$2,800"
+            description="$2,800"
             href="/cases/genesis/walnut"
             alt=""
             src={imageWalnutMain}
@@ -154,7 +154,7 @@ const Layout = ({ children }: Props) => {
           />
           <ProductsCard
             title="Genesis - Blackwood"
-            // description="$2,800"
+            description="$2,800"
             href="/cases/genesis/blackwood"
             alt=""
             src={imageBlackwoodMain}

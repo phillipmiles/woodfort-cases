@@ -13,8 +13,13 @@ import imageWalnutMain from '../../../public/images/genesis/walnut/main_walnut.j
 import imageTasOakPower1 from '../../../public/images/genesis/tasoak/power1_tasoak.jpg';
 import imageBlackwoodPower1 from '../../../public/images/genesis/blackwood/power1_blackwood.jpg';
 import imageWalnutPower1 from '../../../public/images/genesis/walnut/power1_walnut.jpg';
+import { Metadata } from 'next';
 // import imageWipSandingAltBW from '../../../public/images/wip_sanding_alt_blackwhite.jpg';
 // import OrderNowSection from '@/constructs/OrderNowSection';
+
+export const metadata: Metadata = {
+  title: 'Cases',
+};
 
 export default function Home() {
   return (
@@ -26,7 +31,7 @@ export default function Home() {
         <ProductsGrid>
           <ProductsCard
             title="Genesis - Tasmanian Oak"
-            // description="$2,800"
+            description="$2,800 AUD"
             href="/cases/genesis/tasmanian-oak"
             alt=""
             src={imageTasOakMain}
@@ -34,7 +39,7 @@ export default function Home() {
           />
           <ProductsCard
             title="Genesis - Walnut"
-            // description="$2,800"
+            description="$2,800 AUD"
             href="/cases/genesis/walnut"
             alt=""
             src={imageWalnutMain}
@@ -42,7 +47,7 @@ export default function Home() {
           />
           <ProductsCard
             title="Genesis - Blackwood"
-            // description="$2,800"
+            description="$2,800 AUD"
             href="/cases/genesis/blackwood"
             alt=""
             src={imageBlackwoodMain}
