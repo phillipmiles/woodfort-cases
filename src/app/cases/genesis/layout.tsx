@@ -14,14 +14,14 @@ import SpecsCell from '@/components/SpecsCell';
 import SpecsCellTitle from '@/components/SpecsCellTitle';
 import SpecsGrid from '@/components/SpecsGrid';
 import OrderNowSection from '@/constructs/OrderNowSection';
-
+import s from './layout.module.css';
 interface Props {
   children: React.ReactNode;
 }
 
 const Layout = ({ children }: Props) => {
   return (
-    <div>
+    <div className={s.container}>
       {children}
       <Section tight>
         <h2>Tech Specs</h2>
