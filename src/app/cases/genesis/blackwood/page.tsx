@@ -20,40 +20,11 @@ import imageBlackwoodBareFront from '../../../../../public/images/genesis/blackw
 import imageBlackwoodBareBack from '../../../../../public/images/genesis/blackwood/bare_back_blackwood.jpg';
 
 import ProductGallery from '@/components/ProductGallery';
+import { jsonLd, metadata as md } from './metadata';
 
-export const metadata: Metadata = {
-  title: 'Genesis - Blackwood',
-};
+export const metadata: Metadata = md;
 
 const Page = () => {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: 'Genesis PC Case (Blackwood) | Woodfort Cases',
-    image:
-      'https://www.woodfortcases.com/images/genesis/tasoak/main_tasoak.jpg',
-    description:
-      'Handmade wooden PC case made from Blackwood, a prized Australian timber that features golden rown tones meixed with some reds and darker streaks.',
-    brand: {
-      '@type': 'Brand',
-      name: 'Woodfort Cases',
-    },
-    offers: {
-      '@type': 'Offer',
-      offerCount: 1,
-      // TODO: CONSOLIDATE PRICE AMONGST ALL PAGES AND TILES
-      price: 2800,
-      priceCurrency: 'AUD',
-      itemCondition: 'https://schema.org/NewCondition',
-      availability: 'https://schema.org/InStock',
-      url: 'https://www.woodfortcases.com/cases/genesis/blackwood',
-      seller: {
-        '@type': 'Organization',
-        name: 'Woodfort Cases',
-      },
-    },
-  };
-
   return (
     <Section tight>
       {/* Add JSON-LD to your page */}

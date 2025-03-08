@@ -28,7 +28,44 @@ export const metadata: Metadata = {
   ],
   description:
     'Woodfort Cases make beautiful handcrafted wood panelled PC cases that bring a calming warmth to your home office or gaming PC.',
+  openGraph: {
+    title: {
+      template: '%s | Woodfort Cases',
+      default: 'Woodfort Cases - Handmade wooden PC cases',
+    },
+    description:
+      'Woodfort Cases make beautiful handcrafted wood panelled PC cases that bring a calming warmth to your home office or gaming PC.',
+    url: 'https://www.woodfortcases.com',
+    siteName: 'Woodfort Cases',
+    images: [
+      {
+        url: 'https://www.woodfortcases.com/images/genesis/tasoak/main_tasoak.jpg',
+        width: 3771,
+        height: 2828,
+      },
+      {
+        url: 'https://www.woodfortcases.com/images/genesis/walnut/power1_walnut.jpg',
+        width: 3771,
+        height: 2828,
+      },
+      {
+        url: 'https://www.woodfortcases.com/images/genesis/blackwood/power2_blackwood.jpg',
+        width: 3771,
+        height: 2828,
+      },
+    ],
+    videos: [
+      {
+        url: 'https://www.woodfortcases.com/woodfort_advert_video_lowres.mp4',
+        width: 1280,
+        height: 720,
+      },
+    ],
+    locale: 'en_UK',
+    type: 'website',
+  },
 };
+
 import './globals.css';
 
 export default function RootLayout({

@@ -13,40 +13,11 @@ import imageWalnutBareFront from '../../../../../public/images/genesis/walnut/ba
 import imageWalnutBareBack from '../../../../../public/images/genesis/walnut/bare_back_walnut.jpg';
 
 import ProductGallery from '@/components/ProductGallery';
+import { jsonLd, metadata as md } from './metadata';
 
-export const metadata: Metadata = {
-  title: 'Genesis - Walnut',
-};
+export const metadata: Metadata = md;
 
 const Page = () => {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: 'Genesis PC Case (Walnut) | Woodfort Cases',
-    image:
-      'https://www.woodfortcases.com/images/genesis/walnut/main_walnut.jpg',
-    description:
-      'Handmade wooden PC case made from the recognisable American Walnut which displays deep chocolate brown colours.',
-    brand: {
-      '@type': 'Brand',
-      name: 'Woodfort Cases',
-    },
-    offers: {
-      '@type': 'Offer',
-      offerCount: 1,
-      // TODO: CONSOLIDATE PRICE AMONGST ALL PAGES AND TILES
-      price: 2800,
-      priceCurrency: 'AUD',
-      itemCondition: 'https://schema.org/NewCondition',
-      availability: 'https://schema.org/InStock',
-      url: 'https://www.woodfortcases.com/cases/genesis/walnut',
-      seller: {
-        '@type': 'Organization',
-        name: 'Woodfort Cases',
-      },
-    },
-  };
-
   return (
     <Section tight>
       {/* Add JSON-LD to your page */}
@@ -54,7 +25,6 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      {/* ... */}
       <div className={s.productContainer}>
         <ProductGallery
           images={[
